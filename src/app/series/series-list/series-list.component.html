@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Channel</th>
+                        <th>Seasons</th>
+                      </tr>
+                    </thead>
+                    <tbody *ngFor="let c of series">
+                      <td>{{c.id}}</td>
+                      <td class="nameSeries">{{c.name}}</td>
+                      <td>{{c.channel}}</td>
+                      <td>{{c.seasons}}</td>
+                    </tbody>
+            </table>
+            <p>Seasons average {{seasonsAverage}}</p>
+        </div>
+    </div>
+  </div>

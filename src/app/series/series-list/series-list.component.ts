@@ -18,8 +18,7 @@ export class SeriesListComponent implements OnInit {
       this.series = series;
       let totalSeasons = 0;
       let addSeasons = 0;
-      series.forEach((series) => addSeasons = addSeasons + series.seasons,
-      totalSeasons = totalSeasons + 1);
+      series.forEach((series) => {addSeasons = addSeasons + series.seasons; totalSeasons = totalSeasons + 1});
       this.seasonsAverage = addSeasons / totalSeasons;
     })
   }
